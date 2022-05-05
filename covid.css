@@ -55,9 +55,9 @@ td {
 
 }
 .second{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
-    background-color: blueviolet;
+    background-color:orange;
 }
 
 /* sidebar */
