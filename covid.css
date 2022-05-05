@@ -1,0 +1,113 @@
+.container{
+    
+    /* overflow-y: auto; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+}
+.one {
+    height: 100vh;
+    width: 250px;
+    background-color: rgb(113, 179, 179);
+    position: sticky;
+    top: 0;
+    padding-left: 100px;
+    padding-top: 30px;
+    
+}
+.container thead th{
+    position: sticky;
+    top: 0;
+}
+
+
+table {
+   
+    font-size: large;
+    border: 1px solid black;
+}
+
+td {
+    background-color: #E4F5D4;
+    border: 1px solid black;
+}
+
+th{
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: aquamarine;
+  
+}
+
+td {
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    font-weight: lighter;
+
+
+}
+.second{
+    height: 100vh;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+/* sidebar */
+
+body1{
+    font-family: sans-serif;
+    margin: 20px 40px;
+}
+#mainbox{
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .6s;
+}
+.sidemenu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: #222;
+    z-index: 1;
+    padding-top: 100px;
+overflow-x: hidden;
+transition: all .5s
+
+}
+.sidemenu a{
+    padding: 8px 8px 8px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #999;
+    display: block;
+}
+.sidemenu a:hover{
+    color:#fff;
+}
+.sidemenu .closebtn{
+    position: absolute;
+    top:0px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 32px;
+}
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
