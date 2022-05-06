@@ -47,7 +47,33 @@ function getdata() {
         }
     )
 }
+fetch("https://api.covid19api.com/dayone/country/india").then(
 
+        res => {
+            res.json().then(
+                data => {
+                    if (data.length > 0) {
+                        data = data.reverse();
+                        var temp = "";
+                        data.forEach((itemData) => {
+                            temp += "<tr>";
+                            temp += "<td >" + itemData.ID + "</td>";
+                            temp += "<td>" + itemData.Country + "</td>";
+                            temp += "<td>" + itemData.CountryCode + "</td>";
+                            temp += "<td>" + itemData.Lat + "</td>";
+                            temp += "<td>" + itemData.Lon + "</td>";
+                            temp += "<td>" + itemData.Confirmed + "</td>";
+                            temp += "<td>" + itemData.Deaths + "</td>";
+                            temp += "<td>" + itemData.Recovered + "</td>";
+                            temp += "<td>" + itemData.Active + "</td>";
+                            temp += "<td>" + new Date(itemData.Date).toLocaleDateString() + "</td></tr>";
+                        });
+                        document.getElementById('data').innerHTML = temp;
+                    }
+                }
+            )
+        }
+    )
 // function ready() {
 //     document.getElementById("body").show();
 //     document.getElementById("msg").hide();
