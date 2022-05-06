@@ -1,3 +1,8 @@
+var loader=`<div id="loading"  style="margin-left:500px;"></div>`
+document.getElementById("data").innerHTML=loader;
+
+
+
 function openFunction() {
     document.getElementById("menu").style.width = "300px";
     document.getElementById("mainbox").style.marginLeft = "300px";
@@ -13,6 +18,7 @@ function closeFunction() {
 function getdata() {
     // alert("hi")
     var name = document.getElementById('input').value;
+    document.getElementById("data").innerHTML=loader;
     fetch(`https://api.covid19api.com/dayone/country/${name}`).then(
 
         res => {
