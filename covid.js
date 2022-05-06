@@ -23,7 +23,7 @@ function getdata() {
                         var temp = "";
                         data.forEach((itemData) => {
                             temp += "<tr>";
-                            temp += "<td>" + itemData.ID + "</td>";
+                            temp += "<td >" + itemData.ID + "</td>";
                             temp += "<td>" + itemData.Country + "</td>";
                             temp += "<td>" + itemData.CountryCode + "</td>";
                             temp += "<td>" + itemData.Lat + "</td>";
