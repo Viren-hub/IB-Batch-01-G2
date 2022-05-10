@@ -1,160 +1,240 @@
-    .container {
-        /* overflow-y: auto; */
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        overflow: scroll;
-    }
-    .main {
-        height: 100vh;
-        width: 100%;
-        background-color: rgb(113, 179, 179);
-        position: sticky;
-        top: 0;
-        padding-left: 100px;
-        padding-top: 30px;
-    }
-    
-    input {
-        font-size: medium;
-        margin: 10px;
-        border: 4px outset #1ec917;
-    }
-    
-    button {
-        background-image: linear-gradient(to right top, #d16ba5, #c861b0, #ba5bbe, #a458ce, #8259de, #686eed, #467ff8, #008fff, #00adff, #00c6ff, #00dcf4, #23efe2);
-        font-size: medium;
-        color: white;
-        border-radius: 5px;
-    }
-    
-    .container thead th {
-        position: sticky;
-        top: 0;
-    }
-    
-    table {
-        border-collapse: collapse;
-        border: 1px solid black;
-    }
-    
-    table tr:nth-child(even) {
-        background: rgb(238, 174, 201);
-        background: linear-gradient(241deg, rgba(238, 174, 201, 1) 0%, rgba(148, 187, 233, 1) 100%);
-    }
-    
-    th {
-        font-weight: bolder;
-        border: 2px solid black;
-        padding: 10px;
-        text-align: center;
-        font-family: Arial, sans-serif;
-        background-color: rgb(110, 110, 224);
-    }
-    
-    td {
-        border: 2px solid black;
-        padding: 10px;
-        font-weight: lighter;
-        text-align: center;
-        font-family: sans-serif;
-    }
-    
-    tfoot {
-        background: rgb(10, 4, 117);
-        background: linear-gradient(118deg, rgba(10, 4, 117, 1) 0%, rgba(99, 216, 239, 1) 100%);
-        font-size: 18px;
-        font-weight: bold;
-    }
-    
-    .table tfoot td {
-        border-radius: 5px;
-        font-size: 18px;
-    }
-    
-    .links a {
-        text-decoration: none;
-        background-color: #fff;
-        border-radius: 2px;
-        padding: 2px 8px;
-    }
-    
-    .second {
-        height: 20px;
-        width: 10%;
-        position: sticky;
-    }
-    /* sidebar */
-    
-    body1 {
-        font-family: sans-serif;
-        margin: 20px 40px;
-    }
-    
-    #mainbox {
-        font-size: 24px;
-        cursor: pointer;
-        transition: all .6s;
-    }
-    
-    .sidemenu {
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        height: 100%;
-        width: 0px;
-        background-color: #222;
-        z-index: 1;
-        padding-top: 100px;
-        overflow-x: hidden;
-        transition: all .5s
-    }
-    
-    .sidemenu a {
-        padding: 8px 8px 8px 64px;
-        text-decoration: none;
-        font-size: 20px;
-        color: #999;
-        display: block;
-    }
-    
-    .sidemenu a:hover {
-        color: #fff;
-    }
-    
-    .sidemenu .closebtn {
-        position: absolute;
-        top: 0px;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 32px;
-    }
-    
-    #myInput {
-        background-image: url('/css/searchicon.png');
-        /* Add a search icon to input */
-        background-position: 10px 12px;
-        /* Position the search icon */
-        background-repeat: no-repeat;
-        /* Do not repeat the icon image */
-        width: 100%;
-        /* Full-width */
-        font-size: 16px;
-        /* Increase font-size */
-        padding: 12px 20px 12px 40px;
-        /* Add some padding */
-        border: 1px solid #ddd;
-        /* Add a grey border */
-        margin-bottom: 12px;
-        /* Add some space below the input */
-    }
+* {
+    padding: 0px;
+    margin: 0px;
+}
 
-    .three{
+.container {
+    /* overflow-y: auto; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(113, 179, 179);
+    position: sticky;
+    top: 0;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+input {
+    font-size: medium;
+    margin: 10px;
+    border: 4px outset #1ec917;
+}
+
+button {
+    background-image: linear-gradient(to right top, #d16ba5, #c861b0, #ba5bbe, #a458ce, #8259de, #686eed, #467ff8, #008fff, #00adff, #00c6ff, #00dcf4, #23efe2);
+    font-size: medium;
+    color: white;
+    border-radius: 5px;
+}
+
+#main {
+    height: 100vh;
+    width: 80%;
+}
+
+.container thead th {
+    position: sticky;
+    top: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table tr:nth-child(even) {
+    background: rgb(238, 174, 201);
+    background: linear-gradient(241deg, rgba(238, 174, 201, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+#first {
+    position: sticky;
+    position: -webkit-sticky;
+    /* font-weight: bolder; */
+    border: 2px solid black;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: rgb(110, 110, 224);
+}
+
+td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+tfoot {
+    background: rgb(10, 4, 117);
+    background: linear-gradient(118deg, rgba(10, 4, 117, 1) 0%, rgba(99, 216, 239, 1) 100%);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.table tfoot td {
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.links a {
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 2px 8px;
+}
+
+.second {
+    height: 20px;
+    width: 10%;
+    position: sticky;
+}
+
+
+/* sidebar */
+
+body1 {
+    font-family: sans-serif;
+    margin: 20px 40px;
+}
+
+#mainbox {
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.sidemenu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: #222;
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+    transition: all .5s
+}
+
+.sidemenu a {
+    padding: 8px 8px 8px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #999;
+    display: block;
+}
+
+.sidemenu a:hover {
+    color: #fff;
+}
+
+.sidemenu .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 32px;
+}
+
+#myInput {
+    background-image: url('/css/searchicon.png');
+    /* Add a search icon to input */
+    background-position: 10px 12px;
+    /* Position the search icon */
+    background-repeat: no-repeat;
+    /* Do not repeat the icon image */
+    width: 100%;
+    /* Full-width */
+    font-size: 16px;
+    /* Increase font-size */
+    padding: 12px 20px 12px 40px;
+    /* Add some padding */
+    border: 1px solid #ddd;
+    /* Add a grey border */
+    margin-bottom: 12px;
+    /* Add some space below the input */
+}
+
+
+/*     
+    .three {
         height: 300px;
         width: 100%;
         background-color: rgb(3, 236, 150);
     }
-    .links{
+    
+    .links {
         margin-left: 300px;
         font-size: 18px;
-    }
+    } */
+
+#loading {
+    height: 700px;
+    width: 400px;
+    background: url("./ezgif-2-6d0b072c3d3f.gif") no-repeat center;
+    /* z-index: 45653; */
+}
+
+
+/* ====== Cards ======= */
+
+.cards {
+    margin: 5px;
+    height: 350px;
+    width: 1400px;
+    background-color: #8259de;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card1 {
+    top: 50px;
+    text-align: center;
+    margin: 5px;
+    height: 300px;
+    width: 300px;
+    background-color: #00dcf4;
+}
+
+.card2 {
+    text-align: center;
+    margin: 5px;
+    height: 300px;
+    width: 300px;
+    background-color: #00dcf4;
+}
+
+.card3 {
+    text-align: center;
+    margin: 5px;
+    height: 300px;
+    width: 300px;
+    background-color: #00dcf4;
+}
+
+.card4 {
+    text-align: center;
+    margin: 5px;
+    height: 300px;
+    width: 300px;
+    background-color: #00dcf4;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+span {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+}
