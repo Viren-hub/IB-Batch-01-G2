@@ -114,6 +114,6 @@ $(document).ready(function() {
 
 //total count of Confirmed cases
 
-var a = document.getElementById('ct');
-var rows = a.rows.length;
-alert("Number of Rows are: " + rows);
+// var a = document.getElementById('ct');
+// var rows = a.rows.length;
+// alert("Number of Rows are: " + rows);
