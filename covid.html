@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js">
 </head>
 
 
@@ -35,19 +36,6 @@
         <!-- ============== Search Bar =========== -->
         <div class="second">
             <input type="text" id="myinput" onkeyup="myFunction()" placeholder="Search....">
-            <div class="cardmain">
-                <div class="card">
-                    <h3>Total Confirmed Cases=</h3>
-                </div>
-                <div class="card">
-                    <h3>Total Active Cases=</h3>
-                </div>
-                <div class="card">
-                    <h3>Total Deaths =</h3>
-                </div>
-                <!-- <div class="card"></div>
-                <div class="card"></div> -->
-            </div>
 
             <!--============Cards===============-->
             <div class="cards">
@@ -80,38 +68,15 @@
                         <th>Recovered <i class="fa fa-sort" aria-hidden="true"></i></th>
                         <th>Active <i class="fa fa-sort" aria-hidden="true"></i></th>
                         <th>Date <i class="fa fa-sort" aria-hidden="true"></i></th>
-                        =======
-                        <!-- ==============Data Table=============== -->
-                        <table id="main" class="table ">
-                            <!-- =============Table Head================ -->
-                            <thead id="first">
-                                <tr data-aos="fade-up">
-                                    <th>ID</th>
-                                    <th>Country</th>
-                                    <th>CountryCode</th>
-                                    <th>Lat</th>
-                                    <th>Lon</th>
-                                    <th>Confirmed</th>
-                                    <th>Deaths</th>
-                                    <th>Recovered</th>
-                                    <th class="act" id="act">Active
-                                        <a href="#"> <i onclick="sortTable()" class="fa fa-sort " style="color: black;" aria-hidden="true"></i></th>
-                                    </a>
-                                    <th>Date</th>
-                                    >>>>>>> 07bb4a45a431f1232c89da8b9cad11955a43f03d
-                                </tr>
-                            </thead>
 
+                        <!-- ================= Table Body ====================== -->
+                        <tbody id="data">
 
+                        </tbody>
 
-                            <!-- ================= Table Body ====================== -->
-                            <tbody id="data">
+                        <!-- =================== Table Footer ======================== -->
 
-                            </tbody>
-
-                            <!-- =================== Table Footer ======================== -->
-
-                        </table>
+            </table>
         </div>
     </div>
     <!-- =================== Div for Pagination======================== -->
